@@ -26,14 +26,21 @@
             line-height: 1.8;
             margin-bottom: 30px;
         }
-
-        .abstract {
-            text-align: left; /* Align text to the left */
-            background-color: #f9f9f9; /* Light background color */
-            border-left: 4px solid #444; /* Left border for visual separation */
-            padding: 15px;
+        .abstract-container {
             margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .abstract-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .abstract-content {
             font-size: 1.1rem;
+            line-height: 1.6;
         }
 
         img {
@@ -98,8 +105,10 @@
         </figcaption>
     </figure>    
     <!-- Abstract Section -->
-    <div class="abstract">
-        <strong>Abstract:</strong>The rapid advancement of generative models in creating
+    <div class="abstract-container">
+        <div class="abstract-title">Abstract</div>
+        <div class="abstract-content">
+        The rapid advancement of generative models in creating
         highly realistic images poses substantial risks for misinformation dissemination. For instance, a synthetic image,
         when shared on social media, can mislead extensive audiences and erode trust in digital content, resulting in severe
         repercussions. Despite some progress, academia has not yet
@@ -114,7 +123,7 @@
         state-of-the-art deepfake detection models on SID-Set and
         other benchmarks, extensive experiments demonstrate that
         SIDA achieves superior performance among diversified settings. The code, model, and dataset will be released.
-        
+        </div>
     </div>
 </body>
 
